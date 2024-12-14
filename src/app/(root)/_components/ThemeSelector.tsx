@@ -17,6 +17,7 @@ import {
   Palette,
   Snowflake,
   Sun,
+  Star,
 } from "lucide-react";
 import useMounted from "@/hooks/useMounted";
 
@@ -31,7 +32,13 @@ const THEME_ICONS: Record<string, React.ReactNode> = {
   "pink-spring": <Flower className="size-4 text-pink-500" />,
   "autumn-yellow": <Leaf className="size-4 text-yellow-500" />,
   "bluish-dark": <Snowflake className="size-4 text-blue-500" />,
+  "oceanic-breeze": <Cloud className="size-4 text-cyan-500" />, // Substitute for unavailable Wave
+  "sunset-glow": <Sun className="size-4 text-orange-500" />, // Substitute for unavailable Sunset
+  "forest-bloom": <Leaf className="size-4 text-green-500" />, // Substitute for unavailable Tree
+  "candy-pop": <Palette className="size-4 text-purple-500" />, // Substitute for unavailable Candy
+  "aurora-borealis": <Star className="size-4 text-teal-500" />
 };
+
 
 function ThemeSelector() {
   const [isOpen, setIsOpen] = useState(false);

@@ -347,7 +347,13 @@ export const THEMES: Theme[] = [
   { id: "pink-spring", label: "Pink Spring", color: "#ff79c6" },
   { id: "autumn-yellow", label: "Autumn Yellow", color: "#f1fa8c" },
   { id: "bluish-dark", label: "Bluish Dark", color: "#1a2a40" },
+  { id: "oceanic-breeze", label: "Oceanic Breeze", color: "#1b2b34" },
+  { id: "sunset-glow", label: "Sunset Glow", color: "#2d132c" },
+  { id: "forest-bloom", label: "Forest Bloom", color: "#1e272e" },
+  { id: "candy-pop", label: "Candy Pop", color: "#282a36" },
+  { id: "aurora-borealis", label: "Aurora Borealis", color: "#0c2233" }
 ];
+
 
 export const THEME_DEFINITONS = {
   "github-dark": {
@@ -524,6 +530,106 @@ export const THEME_DEFINITONS = {
       "editorLineNumber.foreground": "#5a7a9a",
     },
   },
+  "sunset-glow": {
+  base: "vs-dark",
+  inherit: true,
+  rules: [
+    { token: "comment", foreground: "ffd580" },
+    { token: "string", foreground: "e6ac00" },
+    { token: "keyword", foreground: "ff7eb6" },
+    { token: "number", foreground: "ffcb6b" },
+    { token: "type", foreground: "ffa657" },
+    { token: "class", foreground: "ffcc00" },
+    { token: "function", foreground: "ff6f91" },
+    { token: "variable", foreground: "ffa726" },
+    { token: "operator", foreground: "ff4081" }
+  ],
+  colors: {
+    "editor.background": "#2d132c",
+    "editor.foreground": "#f8e1f4",
+    "editor.lineHighlightBackground": "#33132f",
+    "editorLineNumber.foreground": "#f5c2e1",
+    "editorIndentGuide.background": "#4d2747",
+    "editor.selectionBackground": "#6f244f",
+    "editor.inactiveSelectionBackground": "#6f244f55"
+  }
+},
+"forest-bloom": {
+  base: "vs-dark",
+  inherit: true,
+  rules: [
+    { token: "comment", foreground: "6a9955" },
+    { token: "string", foreground: "b5cea8" },
+    { token: "keyword", foreground: "c586c0" },
+    { token: "number", foreground: "dcdcaa" },
+    { token: "type", foreground: "569cd6" },
+    { token: "class", foreground: "4ec9b0" },
+    { token: "function", foreground: "dcd6ff" },
+    { token: "variable", foreground: "9cdcfe" },
+    { token: "operator", foreground: "ce9178" }
+  ],
+  colors: {
+    "editor.background": "#1e272e",
+    "editor.foreground": "#dcdcdc",
+    "editor.lineHighlightBackground": "#2e3b41",
+    "editorLineNumber.foreground": "#4f5b66",
+    "editorIndentGuide.background": "#3e4c54",
+    "editor.selectionBackground": "#405868",
+    "editor.inactiveSelectionBackground": "#40586866"
+  }
+},
+"candy-pop": {
+  base: "vs-dark",
+  inherit: true,
+  rules: [
+    { token: "comment", foreground: "ff79c6" },
+    { token: "string", foreground: "50fa7b" },
+    { token: "keyword", foreground: "bd93f9" },
+    { token: "number", foreground: "ff5555" },
+    { token: "type", foreground: "ffb86c" },
+    { token: "class", foreground: "8be9fd" },
+    { token: "function", foreground: "ff79c6" },
+    { token: "variable", foreground: "f1fa8c" },
+    { token: "operator", foreground: "ff79c6" }
+  ],
+  colors: {
+    "editor.background": "#282a36",
+    "editor.foreground": "#f8f8f2",
+    "editor.lineHighlightBackground": "#44475a",
+    "editorLineNumber.foreground": "#6272a4",
+    "editorIndentGuide.background": "#3b3c4d",
+    "editor.selectionBackground": "#44475a",
+    "editor.inactiveSelectionBackground": "#44475a66"
+  }
+},
+"aurora-borealis": {
+  base: "vs-dark",
+  inherit: true,
+  rules: [
+    { token: "comment", foreground: "7f848e" },
+    { token: "string", foreground: "a8e5a0" },
+    { token: "keyword", foreground: "8abcfb" },
+    { token: "number", foreground: "ffcc99" },
+    { token: "type", foreground: "c0a6f6" },
+    { token: "class", foreground: "f5c6ff" },
+    { token: "function", foreground: "99d9f6" },
+    { token: "variable", foreground: "89b4f8" },
+    { token: "operator", foreground: "ff9ac1" }
+  ],
+  colors: {
+    "editor.background": "#0c2233",
+    "editor.foreground": "#d3d7e0",
+    "editor.lineHighlightBackground": "#12263b",
+    "editorLineNumber.foreground": "#4e6173",
+    "editorIndentGuide.background": "#1b2f44",
+    "editor.selectionBackground": "#294870",
+    "editor.inactiveSelectionBackground": "#29487066"
+  }
+},
+
+
+
+
 };
 
 // Helper function to define themes in Monaco
